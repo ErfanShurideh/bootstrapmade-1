@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
    CheckCheck,
    ChevronsRight,
+   Circle,
    Dribbble,
    Earth,
    FileText,
@@ -11,6 +12,7 @@ import {
    Menu,
    MonitorPlay,
    Play,
+   Quote,
    Smile,
    Tent,
    UsersRound,
@@ -21,6 +23,8 @@ import {
    AccordionItem,
    AccordionTrigger,
 } from "@/components/ui/accordion";
+import Image from "next/image";
+import image from "../../public/testimonials-5.jpg";
 
 const page = () => {
    return (
@@ -405,6 +409,108 @@ const page = () => {
                   </div>
                </div>
             </section>
+            {/* testimonials */}
+            <section className="bg-[#F7F9FD]">
+               <section className="container">
+                  <div className="py-14">
+                     <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                        TESTIMONIALS
+                     </span>
+                     <h2 className="font-extrabold text-3xl text-dark-blue pt-2">
+                        TESTIMONIALS
+                     </h2>
+                  </div>
+                  <div className="xl:flex xl:justify-center xl:items-center xl:gap-x-10">
+                     <div className="xl:flex-1 pl-10">
+                        <div className="pl-14 pr-6 py-8 md:pb-20 bg-white shadow-xl relative">
+                           {/* avatar */}
+                           <div className="w-[80px] h-[80px] absolute top-9 -left-10 rounded-md overflow-hidden ring-4 ring-white rotat">
+                              <Image
+                                 src={image}
+                                 alt="testimonials-5"
+                                 className="object-cover object-center"
+                                 fill
+                              />
+                           </div>
+                           <div className="pt-2 pb-4">
+                              <div className="font-bold text-xl text-dark-brown">
+                                 John Larson
+                              </div>
+                              <div className="text-sm text-dark-brown text-opacity-70">
+                                 Entrepreneur
+                              </div>
+                           </div>
+                           <div className="text-left text-dark-brown text-opacity-85 italic">
+                              <div className="inline-block font-bold text-5xl text-[#f9c6bb] leading-[0px] align-top mr-1 mt-1">
+                                 ،،
+                              </div>
+                              Quis quorum aliqua sint quem legam fore sunt eram irure
+                              aliqua veniam tempor noster veniam enim culpa labore duis
+                              sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                              fore nisi cillum quid.
+                              <div className="inline-block font-bold text-5xl text-[#f9c6bb] leading-[0px] align-bottom rotate-180 ml-1 mb-1.5">
+                                 ،،
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="flex-1 pl-10 hidden xl:block">
+                        <div className="pl-14 pr-6 py-8 md:pb-20 bg-white shadow-xl relative">
+                           {/* avatar */}
+                           <div className="w-[80px] h-[80px] absolute top-9 -left-10 rounded-md overflow-hidden ring-4 ring-white rotat">
+                              <Image
+                                 src={image}
+                                 alt="testimonials-5"
+                                 className="object-cover object-center"
+                                 fill
+                              />
+                           </div>
+                           <div className="pt-2 pb-4">
+                              <div className="font-bold text-xl text-dark-brown">
+                                 Matt Brandon
+                              </div>
+                              <div className="text-sm text-dark-brown text-opacity-70">
+                                 Freelancer
+                              </div>
+                           </div>
+                           <div className="text-left text-dark-brown text-opacity-85 italic">
+                              <div className="inline-block font-bold text-5xl text-[#f9c6bb] leading-[0px] align-top mr-1 mt-1">
+                                 ،،
+                              </div>
+                              Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                              multos export minim fugiat minim velit minim dolor enim duis
+                              veniam ipsum anim sunt elit fore quem dolore labore illum
+                              veniam.
+                              <div className="inline-block font-bold text-5xl text-[#f9c6bb] leading-[0px] align-bottom rotate-180 ml-1 mb-1.5">
+                                 ،،
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="py-16 flex justify-center items-center align-middle gap-x-2">
+                     <Circle className="size-3 text-primary bg-primary rounded-full" />
+                     <Circle className="size-3 text-primary" />
+                     <Circle className="size-3 text-primary" />
+                     <Circle className="size-3 text-primary" />
+                     <Circle className="size-3 text-primary" />
+                  </div>
+               </section>
+            </section>
+            {/* Call To Action */}
+            <section className="py-14 bg-darker-blue">
+               <div className="container flex flex-col justify-center items-center">
+                  <div className="font-bold text-2xl text-white text-center">Call To Action</div>
+                  <div className="mt-3 text-white text-center">
+                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est
+                     laborum.
+                  </div>
+                  <button className="px-10 py-2 mt-6 border-2 border-primary rounded-md text-sm text-white">Call To Action</button>
+               </div>
+            </section>
+            
          </main>
          <footer></footer>
       </section>
