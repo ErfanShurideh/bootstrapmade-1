@@ -3,11 +3,16 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
    CheckCheck,
    ChevronsRight,
+   Dribbble,
+   Earth,
    FileText,
+   Gauge,
    Headset,
    Menu,
+   MonitorPlay,
    Play,
    Smile,
+   Tent,
    UsersRound,
 } from "lucide-react";
 import {
@@ -288,6 +293,115 @@ const page = () => {
                            </AccordionContent>
                         </AccordionItem>
                      </Accordion>
+                  </div>
+               </div>
+            </section>
+            {/* chech our services */}
+            <section className="container">
+               <div className="py-10">
+                  <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                     SERVICES
+                  </span>
+                  <h2 className="font-extrabold text-3xl text-dark-blue leading-[44px] pt-1">
+                     CHECK OUR SERVICES
+                  </h2>
+               </div>
+               <div className="grid grid-cols-6 gap-6 pb-14">
+                  <div className="h-[330px] col-span-6 md:col-span-3 lg:col-span-2 flex flex-col justify-center items-center shadow-xl px-6 transition-all duration-300 hover:bg-primary [&>div>#iconBox]:hover:bg-white [&>div>#iconBox>svg]:hover:text-primary [&>h5]:hover:text-white [&>p]:hover:text-white">
+                     <div className="w-16 h-[66px] relative z-20 after:absolute after:-z-10 after:-top-2 after:-left-2 after:w-16 after:h-[66px] after:bg-[rgb(249,198,187)] after:rounded-md">
+                        <div
+                           id="iconBox"
+                           className="w-full h-full flex justify-center items-center bg-primary rounded-md overflow-hidden transition duration-300">
+                           <Dribbble className="size-7 text-white transition dura" />
+                        </div>
+                     </div>
+                     <h5 className="py-4 font-bold text-2xl text-darker-blue transition duration-300">
+                        Lorem Ipsum
+                     </h5>
+                     <p className="text-center text-sm text-dark-brown text-opacity-85 transition duration-300">
+                        Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                        excepturi
+                     </p>
+                  </div>
+                  <div className="h-[330px] col-span-6 md:col-span-3 lg:col-span-2 flex flex-col justify-center items-center shadow-xl px-6 transition-all duration-300 hover:bg-primary [&>div>#iconBox]:hover:bg-white [&>div>#iconBox>svg]:hover:text-primary [&>h5]:hover:text-white [&>p]:hover:text-white">
+                     <div className="w-16 h-[66px] relative z-20 after:absolute after:-z-10 after:-top-2 after:-left-2 after:w-16 after:h-[66px] after:bg-[rgb(249,198,187)] after:rounded-md">
+                        <div
+                           id="iconBox"
+                           className="w-full h-full flex justify-center items-center bg-primary rounded-md overflow-hidden transition duration-300">
+                           <FileText className="size-7 text-white transition dura" />
+                        </div>
+                     </div>
+                     <h5 className="py-4 font-bold text-2xl text-darker-blue transition duration-300">
+                        Sed ut perspiciatis
+                     </h5>
+                     <p className="text-center text-sm text-dark-brown text-opacity-85 transition duration-300">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore
+                     </p>
+                  </div>
+                  <div className="h-[330px] col-span-6 md:col-span-3 lg:col-span-2 flex flex-col justify-center items-center shadow-xl px-6 transition-all duration-300 hover:bg-primary [&>div>#iconBox]:hover:bg-white [&>div>#iconBox>svg]:hover:text-primary [&>h5]:hover:text-white [&>p]:hover:text-white">
+                     <div className="w-16 h-[66px] relative z-20 after:absolute after:-z-10 after:-top-2 after:-left-2 after:w-16 after:h-[66px] after:bg-[rgb(249,198,187)] after:rounded-md">
+                        <div
+                           id="iconBox"
+                           className="w-full h-full flex justify-center items-center bg-primary rounded-md overflow-hidden transition duration-300">
+                           <Gauge className="size-7 text-white transition dura" />
+                        </div>
+                     </div>
+                     <h5 className="py-4 font-bold text-2xl text-darker-blue transition duration-300">
+                        Magni Dolores
+                     </h5>
+                     <p className="text-center text-sm text-dark-brown text-opacity-85 transition duration-300">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia
+                     </p>
+                  </div>
+                  <div className="h-[330px] col-span-6 md:col-span-3 lg:col-span-2 flex flex-col justify-center items-center shadow-xl px-6 transition-all duration-300 hover:bg-primary [&>div>#iconBox]:hover:bg-white [&>div>#iconBox>svg]:hover:text-primary [&>h5]:hover:text-white [&>p]:hover:text-white">
+                     <div className="w-16 h-[66px] relative z-20 after:absolute after:-z-10 after:-top-2 after:-left-2 after:w-16 after:h-[66px] after:bg-[rgb(249,198,187)] after:rounded-md">
+                        <div
+                           id="iconBox"
+                           className="w-full h-full flex justify-center items-center bg-primary rounded-md overflow-hidden transition duration-300">
+                           <Earth className="size-7 text-white transition dura" />
+                        </div>
+                     </div>
+                     <h5 className="py-4 font-bold text-2xl text-darker-blue transition duration-300">
+                        Nemo Enim
+                     </h5>
+                     <p className="text-center text-sm text-dark-brown text-opacity-85 transition duration-300">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        blanditiis
+                     </p>
+                  </div>
+                  <div className="h-[330px] col-span-6 md:col-span-3 lg:col-span-2 flex flex-col justify-center items-center shadow-xl px-6 transition-all duration-300 hover:bg-primary [&>div>#iconBox]:hover:bg-white [&>div>#iconBox>svg]:hover:text-primary [&>h5]:hover:text-white [&>p]:hover:text-white">
+                     <div className="w-16 h-[66px] relative z-20 after:absolute after:-z-10 after:-top-2 after:-left-2 after:w-16 after:h-[66px] after:bg-[rgb(249,198,187)] after:rounded-md">
+                        <div
+                           id="iconBox"
+                           className="w-full h-full flex justify-center items-center bg-primary rounded-md overflow-hidden transition duration-300">
+                           <MonitorPlay className="size-7 text-white transition dura" />
+                        </div>
+                     </div>
+                     <h5 className="py-4 font-bold text-2xl text-darker-blue transition duration-300">
+                        Dele cardo
+                     </h5>
+                     <p className="text-center text-sm text-dark-brown text-opacity-85 transition duration-300">
+                        Quis consequatur saepe eligendi voluptatem consequatur dolor
+                        consequuntur
+                     </p>
+                  </div>
+                  <div className="h-[330px] col-span-6 md:col-span-3 lg:col-span-2 flex flex-col justify-center items-center shadow-xl px-6 transition-all duration-300 hover:bg-primary [&>div>#iconBox]:hover:bg-white [&>div>#iconBox>svg]:hover:text-primary [&>h5]:hover:text-white [&>p]:hover:text-white">
+                     <div className="w-16 h-[66px] relative z-20 after:absolute after:-z-10 after:-top-2 after:-left-2 after:w-16 after:h-[66px] after:bg-[rgb(249,198,187)] after:rounded-md">
+                        <div
+                           id="iconBox"
+                           className="w-full h-full flex justify-center items-center bg-primary rounded-md overflow-hidden transition duration-300">
+                           <Tent className="size-7 text-white transition dura" />
+                        </div>
+                     </div>
+                     <h5 className="py-4 font-bold text-2xl text-darker-blue transition duration-300">
+                        Divera don
+                     </h5>
+                     <p className="text-center text-sm text-dark-brown text-opacity-85 transition duration-300">
+                        Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit
+                        aspernatur
+                     </p>
                   </div>
                </div>
             </section>
