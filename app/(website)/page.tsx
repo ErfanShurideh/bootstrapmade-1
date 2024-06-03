@@ -6,10 +6,13 @@ import {
    Circle,
    Dribbble,
    Earth,
+   Facebook,
    FileText,
    Gauge,
    Headset,
+   Instagram,
    Link,
+   Linkedin,
    Menu,
    MonitorPlay,
    Play,
@@ -17,6 +20,7 @@ import {
    Quote,
    Smile,
    Tent,
+   Twitter,
    UsersRound,
 } from "lucide-react";
 import {
@@ -37,6 +41,10 @@ import portfolio6 from "../../public/portfolio-6.jpg";
 import portfolio7 from "../../public/portfolio-7.jpg";
 import portfolio8 from "../../public/portfolio-8.jpg";
 import portfolio9 from "../../public/portfolio-9.jpg";
+import team1 from "../../public/team-1.jpg";
+import team2 from "../../public/team-2.jpg";
+import team3 from "../../public/team-3.jpg";
+import team4 from "../../public/team-4.jpg";
 
 const page = () => {
    return (
@@ -70,15 +78,15 @@ const page = () => {
                         </SheetContent>
                      </Sheet>
                   </div>
-                  {/* desctop menu */}
+                  {/* desktop menu */}
                   <div className="hidden lg:block">
                      <ul className="flex justify-center items-center gap-x-4">
-                        <li className="px-2 text-primary">Home</li>
-                        <li className="px-2">About</li>
-                        <li className="px-2">Services</li>
-                        <li className="px-2">Portfolio</li>
-                        <li className="px-2">Drop Down</li>
-                        <li className="px-2">Contact</li>
+                        <li className="px-2 text-primary cursor-pointer">Home</li>
+                        <li className="px-2 cursor-pointer">About</li>
+                        <li className="px-2 cursor-pointer">Services</li>
+                        <li className="px-2 cursor-pointer">Portfolio</li>
+                        <li className="px-2 cursor-pointer">Drop Down</li>
+                        <li className="px-2 cursor-pointer">Contact</li>
                         <li className="px-2 flex justify-center items-center">
                            <button className="py-2 px-4 text-left text-white bg-primary rounded-md">
                               Get Started
@@ -527,7 +535,7 @@ const page = () => {
                </div>
             </section>
             {/* portfolio */}
-            <section className="container">
+            <section className="container pb-20">
                <div className="py-10">
                   <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
                      PORTFOLIO
@@ -547,7 +555,7 @@ const page = () => {
                   </div>
                   <div className="grid grid-cols-6 gap-8">
                      {/* ................ */}
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio1}
@@ -573,7 +581,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio2}
@@ -599,7 +607,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio3}
@@ -625,7 +633,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio4}
@@ -651,7 +659,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio5}
@@ -677,7 +685,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio6}
@@ -703,7 +711,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio7}
@@ -729,7 +737,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio8}
@@ -755,7 +763,7 @@ const page = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                     <div className="col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
                         <div className="h-0 pb-[80%]">
                            <Image
                               src={portfolio9}
@@ -778,6 +786,165 @@ const page = () => {
                                  <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
                                  <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
                               </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            {/* team */}
+            <section className="bg-[#F7F9FD] pb-20">
+               <div className="container">
+                  <div className="py-10">
+                     <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                        TEAM
+                     </span>
+                     <h2 className="font-extrabold text-3xl text-dark-blue leading-[44px] pt-1">
+                        CHECK OUR TEAM
+                     </h2>
+                  </div>
+                  <div className="grid grid-cols-12 gap-6">
+                     <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 relative [&>div>#teamDetaile]:hover:h-full [&>div>#teamDetaile]:hover:opacity-100 [&>div>#teamDetaile>.user]:hover:text-opacity-90 [&>div>#teamIcons]:hover:w-12 [&>div>#teamIcons>.icon]:hover:opacity-100">
+                        <div className="h-0 pb-[95%]">
+                           <Image
+                              src={team1}
+                              alt="team1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="teamDetaile"
+                              className="h-0 w-full flex flex-col justify-end items-center absolute bottom-0 px-4
+                              bg-gradient-to-t from-[rgba(11,35,65,0.9)] from-0% via-[rgba(11,35,65,0.8)] via-20% to-[rgba(0,212,255,0)] to-100% opacity-0
+                              transition-all duration-300">
+                              <div className="font-bold text-lg text-white text-opacity-0 transition duration-300 user">
+                                 Walter White
+                              </div>
+                              <div className="text-sm text-white text-opacity-0 italic transition duration-300 user">
+                                 Chief Executive Officer
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                           <div
+                              id="teamIcons"
+                              className="h-full w-0 flex flex-col justify-start items-center gap-y-4 py-4 absolute left
+                              bg-[rgba(11,35,65,0.4)]
+                              transition-all duration-300">
+                              <Twitter className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Facebook className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Linkedin className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Instagram className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                           </div>
+                        </div>
+                     </div>
+                     <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 relative [&>div>#teamDetaile]:hover:h-full [&>div>#teamDetaile]:hover:opacity-100 [&>div>#teamDetaile>.user]:hover:text-opacity-90 [&>div>#teamIcons]:hover:w-12 [&>div>#teamIcons>.icon]:hover:opacity-100">
+                        <div className="h-0 pb-[95%]">
+                           <Image
+                              src={team2}
+                              alt="team2"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="teamDetaile"
+                              className="h-0 w-full flex flex-col justify-end items-center absolute bottom-0 px-4
+                              bg-gradient-to-t from-[rgba(11,35,65,0.9)] from-0% via-[rgba(11,35,65,0.8)] via-20% to-[rgba(0,212,255,0)] to-100% opacity-0
+                              transition-all duration-300">
+                              <div className="font-bold text-lg text-white text-opacity-0 transition duration-300 user">
+                                 Walter White
+                              </div>
+                              <div className="text-sm text-white text-opacity-0 italic transition duration-300 user">
+                                 Chief Executive Officer
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                           <div
+                              id="teamIcons"
+                              className="h-full w-0 flex flex-col justify-start items-center gap-y-4 py-4 absolute left
+                              bg-[rgba(11,35,65,0.4)]
+                              transition-all duration-300">
+                              <Twitter className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Facebook className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Linkedin className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Instagram className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                           </div>
+                        </div>
+                     </div>
+                     <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 relative [&>div>#teamDetaile]:hover:h-full [&>div>#teamDetaile]:hover:opacity-100 [&>div>#teamDetaile>.user]:hover:text-opacity-90 [&>div>#teamIcons]:hover:w-12 [&>div>#teamIcons>.icon]:hover:opacity-100">
+                        <div className="h-0 pb-[95%]">
+                           <Image
+                              src={team3}
+                              alt="team3"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="teamDetaile"
+                              className="h-0 w-full flex flex-col justify-end items-center absolute bottom-0 px-4
+                              bg-gradient-to-t from-[rgba(11,35,65,0.9)] from-0% via-[rgba(11,35,65,0.8)] via-20% to-[rgba(0,212,255,0)] to-100% opacity-0
+                              transition-all duration-300">
+                              <div className="font-bold text-lg text-white text-opacity-0 transition duration-300 user">
+                                 Walter White
+                              </div>
+                              <div className="text-sm text-white text-opacity-0 italic transition duration-300 user">
+                                 Chief Executive Officer
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                           <div
+                              id="teamIcons"
+                              className="h-full w-0 flex flex-col justify-start items-center gap-y-4 py-4 absolute left
+                              bg-[rgba(11,35,65,0.4)]
+                              transition-all duration-300">
+                              <Twitter className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Facebook className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Linkedin className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Instagram className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                           </div>
+                        </div>
+                     </div>
+                     <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 relative [&>div>#teamDetaile]:hover:h-full [&>div>#teamDetaile]:hover:opacity-100 [&>div>#teamDetaile>.user]:hover:text-opacity-90 [&>div>#teamIcons]:hover:w-12 [&>div>#teamIcons>.icon]:hover:opacity-100">
+                        <div className="h-0 pb-[95%]">
+                           <Image
+                              src={team4}
+                              alt="team4"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="teamDetaile"
+                              className="h-0 w-full flex flex-col justify-end items-center absolute bottom-0 px-4
+                              bg-gradient-to-t from-[rgba(11,35,65,0.9)] from-0% via-[rgba(11,35,65,0.8)] via-20% to-[rgba(0,212,255,0)] to-100% opacity-0
+                              transition-all duration-300">
+                              <div className="font-bold text-lg text-white text-opacity-0 transition duration-300 user">
+                                 Walter White
+                              </div>
+                              <div className="text-sm text-white text-opacity-0 italic transition duration-300 user">
+                                 Chief Executive Officer
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                           <div
+                              id="teamIcons"
+                              className="h-full w-0 flex flex-col justify-start items-center gap-y-4 py-4 absolute left
+                              bg-[rgba(11,35,65,0.4)]
+                              transition-all duration-300">
+                              <Twitter className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Facebook className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Linkedin className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
+                              <Instagram className="text-white opacity-0 transition-all duration-300 hover:text-primary cursor-pointer icon" />
                            </div>
                         </div>
                      </div>
