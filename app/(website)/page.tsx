@@ -9,9 +9,11 @@ import {
    FileText,
    Gauge,
    Headset,
+   Link,
    Menu,
    MonitorPlay,
    Play,
+   Plus,
    Quote,
    Smile,
    Tent,
@@ -24,7 +26,17 @@ import {
    AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import image from "../../public/testimonials-5.jpg";
+import testimonials1 from "../../public/testimonials-5.jpg";
+import testimonials2 from "../../public/testimonials-4.jpg";
+import portfolio1 from "../../public/portfolio-1.jpg";
+import portfolio2 from "../../public/portfolio-2.jpg";
+import portfolio3 from "../../public/portfolio-3.jpg";
+import portfolio4 from "../../public/portfolio-4.jpg";
+import portfolio5 from "../../public/portfolio-5.jpg";
+import portfolio6 from "../../public/portfolio-6.jpg";
+import portfolio7 from "../../public/portfolio-7.jpg";
+import portfolio8 from "../../public/portfolio-8.jpg";
+import portfolio9 from "../../public/portfolio-9.jpg";
 
 const page = () => {
    return (
@@ -426,7 +438,7 @@ const page = () => {
                            {/* avatar */}
                            <div className="w-[80px] h-[80px] absolute top-9 -left-10 rounded-md overflow-hidden ring-4 ring-white rotat">
                               <Image
-                                 src={image}
+                                 src={testimonials1}
                                  alt="testimonials-5"
                                  className="object-cover object-center"
                                  fill
@@ -459,7 +471,7 @@ const page = () => {
                            {/* avatar */}
                            <div className="w-[80px] h-[80px] absolute top-9 -left-10 rounded-md overflow-hidden ring-4 ring-white rotat">
                               <Image
-                                 src={image}
+                                 src={testimonials2}
                                  alt="testimonials-5"
                                  className="object-cover object-center"
                                  fill
@@ -500,17 +512,278 @@ const page = () => {
             {/* Call To Action */}
             <section className="py-14 bg-darker-blue">
                <div className="container flex flex-col justify-center items-center">
-                  <div className="font-bold text-2xl text-white text-center">Call To Action</div>
+                  <div className="font-bold text-2xl text-white text-center">
+                     Call To Action
+                  </div>
                   <div className="mt-3 text-white text-center">
                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                      non proident, sunt in culpa qui officia deserunt mollit anim id est
                      laborum.
                   </div>
-                  <button className="px-10 py-2 mt-6 border-2 border-primary rounded-md text-sm text-white">Call To Action</button>
+                  <button className="px-10 py-2 mt-6 border-2 border-primary rounded-md text-sm text-white">
+                     Call To Action
+                  </button>
                </div>
             </section>
-            
+            {/* portfolio */}
+            <section className="container">
+               <div className="py-10">
+                  <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                     PORTFOLIO
+                  </span>
+                  <h2 className="font-extrabold text-3xl text-dark-blue leading-[44px] pt-1">
+                     CHECK OUR PORTFOLIO
+                  </h2>
+               </div>
+               <div>
+                  <div className="flex justify-center items-center gap-x-6 pt-2 pb-14">
+                     <button className="font-medium text-sm text-primary">ALL</button>
+                     <button className="font-medium text-sm text-darker-blue">APP</button>
+                     <button className="font-medium text-sm text-darker-blue">
+                        CARD
+                     </button>
+                     <button className="font-medium text-sm text-darker-blue">WEB</button>
+                  </div>
+                  <div className="grid grid-cols-6 gap-8">
+                     {/* ................ */}
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio1}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio2}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio3}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio4}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio5}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio6}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio7}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio8}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="bg-red-200 col-span-6 md:col-span-3 lg:col-span-2 relative [&>div>#detaile]:hover:-translate-y-6 [&>div>#detaile]:hover:bg-opacity-85 [&>div>#detaile>div>div]:hover:text-opacity-100 [&>div>#detaile>div>.icons]:hover:opacity-100">
+                        <div className="h-0 pb-[80%]">
+                           <Image
+                              src={portfolio9}
+                              alt="portfolio1"
+                              className="object-cover object-center"
+                              fill
+                           />
+                           <div
+                              id="detaile"
+                              className="h-20 w-[calc(100%-48px)] flex justify-between items-center absolute bottom-0 laft-6 right-6 px-4 bg-white bg-opacity-0 transition-all duration-300">
+                              <div>
+                                 <div className="font-medium text-lg text-darker-blue text-opacity-0 transition duration-300">
+                                    App1
+                                 </div>
+                                 <div className="text-dark-blue text-opacity-0 transition duration-300">
+                                    App
+                                 </div>
+                              </div>
+                              <div className="flex justify-center items-center gap-x-2">
+                                 <Plus className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                                 <Link className="text-darker-blue opacity-0 transition-all duration-300 cursor-pointer hover:text-primary icons" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
          </main>
          <footer></footer>
       </section>
