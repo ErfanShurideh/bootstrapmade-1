@@ -27,6 +27,9 @@ const config = {
          },
       },
       extend: {
+         backgroundImage: {
+            whyus: "url('/whyUs.PNG')",
+         },
          colors: {
             border: "hsl(var(--border))",
             input: "hsl(var(--input))",
@@ -61,6 +64,9 @@ const config = {
                DEFAULT: "hsl(var(--card))",
                foreground: "hsl(var(--card-foreground))",
             },
+            "dark-blue": "#102F57",
+            "darker-blue": "#0B2341",
+            "dark-brown": "#444444",
          },
          borderRadius: {
             lg: "var(--radius)",

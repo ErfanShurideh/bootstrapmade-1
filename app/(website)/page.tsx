@@ -6,14 +6,21 @@ import {
    FileText,
    Headset,
    Menu,
+   Play,
    Smile,
    UsersRound,
 } from "lucide-react";
+import {
+   Accordion,
+   AccordionContent,
+   AccordionItem,
+   AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const page = () => {
    return (
       <section>
-         <header className="text-[#444444]">
+         <header className="text-dark-brown">
             <div className="container flex justify-between items-center py-4">
                {/* Logo */}
                <div className="font-bold text-2xl text-slate-900">MULTI</div>
@@ -64,7 +71,226 @@ const page = () => {
          <main>
             {/* Introduction */}
             <section></section>
-            
+            {/* About Us */}
+            <section className="container flex flex-col justify-center items-start gap-y-14 py-14">
+               <div>
+                  <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                     ABOUT
+                  </span>
+                  <h2 className="font-extrabold text-3xl text-dark-blue pt-2">
+                     ABOUT US
+                  </h2>
+               </div>
+               <div className="text-dark-brown text-opacity-85 flex flex-col lg:flex-row justify-center items-start gap-x-8 gap-y-10">
+                  <div className="flex flex-col flex-1">
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     </p>
+                     <ul className="flex flex-col justify-center items-start gap-y-3 mt-4">
+                        <li className="flex justify-start items-start">
+                           <span className="text-primary">
+                              <CheckCheck className="w-5" />
+                           </span>
+                           <p className="ml-2">
+                              Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                           </p>
+                        </li>
+                        <li className="flex justify-start items-start">
+                           <span className="text-primary">
+                              <CheckCheck className="w-5" />
+                           </span>
+                           <p className="ml-2">
+                              Duis aute irure dolor in reprehenderit in voluptate velit
+                           </p>
+                        </li>
+                        <li className="flex justify-start items-start">
+                           <span className="text-primary">
+                              <CheckCheck className="w-5" />
+                           </span>
+                           <p className="ml-2">
+                              Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div className="flex flex-col justify-center items-start flex-1">
+                     <p className="">
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                     </p>
+                     <button className="px-10 py-2 mt-6 border-2 border-primary rounded-md text-primary text-sm transition-all duration-300 hover:bg-primary hover:text-white">
+                        Learn More
+                     </button>
+                  </div>
+               </div>
+               <div className="w-full grid grid-cols-4 gap-6 text-dark-brown text-opacity-85">
+                  <div className="col-span-4 md:col-span-2 lg:col-span-1 px-6 py-6 shadow-xl">
+                     <div className="flex justify-start items-center gap-x-4">
+                        <span className="text-primary">
+                           <Smile className="size-9" />
+                        </span>
+                        <span className="pb-5 font-bold text-4xl text-darker-blue">
+                           232
+                        </span>
+                     </div>
+                     <div>
+                        <p className="text-sm">
+                           <span className="font-bold mr-1">Happy Clients</span>
+                           consequuntur quae qui deca rode
+                        </p>
+                     </div>
+                     <div className="flex items-center gap-x-1.5 mt-4 font-semibold text-sm text-dark-blue">
+                        Fine out More
+                        <ChevronsRight className="size-3" />
+                     </div>
+                  </div>
+                  <div className="col-span-4 md:col-span-2 lg:col-span-1 px-6 py-6 shadow-xl">
+                     <div className="flex justify-start items-center gap-x-4">
+                        <span className="text-primary">
+                           <FileText className="size-9" />
+                        </span>
+                        <span className="pb-5 font-bold text-4xl text-darker-blue">
+                           232
+                        </span>
+                     </div>
+                     <div>
+                        <p className="text-sm">
+                           <span className="font-bold mr-1">Projects</span>
+                           adipisci atque cum quia aut numquam delectus
+                        </p>
+                     </div>
+                     <div className="flex items-center gap-x-1.5 mt-4 font-semibold text-sm text-dark-blue">
+                        Fine out More
+                        <ChevronsRight className="size-3" />
+                     </div>
+                  </div>
+                  <div className="col-span-4 md:col-span-2 lg:col-span-1 px-6 py-6 shadow-xl">
+                     <div className="flex justify-start items-center gap-x-4">
+                        <span className="text-primary">
+                           <Headset className="size-9" />
+                        </span>
+                        <span className="pb-5 font-bold text-4xl text-darker-blue">
+                           232
+                        </span>
+                     </div>
+                     <div>
+                        <p className="text-sm">
+                           <span className="font-bold mr-1">Hours Of Support</span>
+                           aut commodi quaerat. Aliquam ratione
+                        </p>
+                     </div>
+                     <div className="flex items-center gap-x-1.5 mt-4 font-semibold text-sm text-dark-blue">
+                        Fine out More
+                        <ChevronsRight className="size-3" />
+                     </div>
+                  </div>
+                  <div className="col-span-4 md:col-span-2 lg:col-span-1 px-6 py-6 shadow-xl">
+                     <div className="flex justify-start items-center gap-x-4">
+                        <span className="text-primary">
+                           <UsersRound className="size-9" />
+                        </span>
+                        <span className="pb-5 font-bold text-4xl text-darker-blue">
+                           232
+                        </span>
+                     </div>
+                     <div>
+                        <p className="text-sm">
+                           <span className="font-bold mr-1">Hard Workers</span>
+                           rerum asperiores dolor molestiae doloribu
+                        </p>
+                     </div>
+                     <div className="flex items-center gap-x-1.5 mt-4 font-semibold text-sm text-dark-blue">
+                        Fine out More
+                        <ChevronsRight className="size-3" />
+                     </div>
+                  </div>
+               </div>
+            </section>
+            {/* Why Us */}
+            <section className="flex flex-col lg:flex-row">
+               {/* video */}
+               <div className="h-[400px] lg:h-auto lg:w-[500px] xl:w-[600px] flex justify-center items-center bg-whyus bg-center bg-cover">
+                  <a
+                     href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                     className="size-16 flex justify-center items-center rounded-full bg-primary ring-[12px] ring-[rgba(237,80,43,0.4)] transition duration-300 hover:scale-125">
+                     <Play className="fill-white size-8 text-primary" />
+                  </a>
+               </div>
+               {/* description */}
+               <div className="lg:flex-1 bg-[#F7F9FD] px-2 lg:px-6 xl:px-20 py-8 lg:py-10 xl:py-12">
+                  <h3 className="font-normal text-3xl text-dark-blue leading-[44px]">
+                     Eum ipsam laborum deleniti
+                     <span className="font-bold ml-1">velit pariatur architecto</span>
+                  </h3>
+                  <p className="text-sm text-dark-brown text-opacity-75 leading-[22px] py-2">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
+                     irure dolor in reprehenderit
+                  </p>
+                  <div>
+                     <Accordion
+                        className="flex flex-col gap-y-4 mt-2"
+                        type="single"
+                        collapsible>
+                        <AccordionItem
+                           className="px-4 py-2 border-0 bg-white rounded-md"
+                           value="item-1">
+                           <AccordionTrigger className="flex justify-between gap-x-4 items-start text-left text-darker-blue [&>svg]:size-5 transition duration-300 hover:no-underline hover:text-primary">
+                              <span className="dec">
+                                 <span className="font-bold text-primary mr-2">01</span>
+                                 Non consectetur a erat nam at lectus urna duis?
+                              </span>
+                           </AccordionTrigger>
+                           <AccordionContent className="text-base text-dark-brown">
+                              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                              volutpat lacus laoreet non curabitur gravida. Venenatis
+                              lectus magna fringilla urna porttitor rhoncus dolor purus
+                              non.
+                           </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem
+                           className="px-4 py-2 border-0 bg-white rounded-md"
+                           value="item-2">
+                           <AccordionTrigger className="flex justify-between gap-x-4 items-start text-left text-darker-blue [&>svg]:size-5 transition duration-300 hover:no-underline hover:text-primary">
+                              <span className="dec">
+                                 <span className="font-bold text-primary mr-2">02</span>
+                                 Feugiat scelerisque varius morbi enim nunc?
+                              </span>
+                           </AccordionTrigger>
+                           <AccordionContent className="text-base text-dark-brown">
+                              Dolor sit amet consectetur adipiscing elit pellentesque
+                              habitant morbi. Id interdum velit laoreet id donec ultrices.
+                              Fringilla phasellus faucibus scelerisque eleifend donec
+                              pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                              ultrices eros in cursus turpis massa tincidunt dui.
+                           </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem
+                           className="px-4 py-2 border-0 bg-white rounded-md"
+                           value="item-3">
+                           <AccordionTrigger className="flex justify-between gap-x-4 items-start text-left text-darker-blue [&>svg]:size-5 transition duration-300 hover:no-underline hover:text-primary">
+                              <span className="dec">
+                                 <span className="font-bold text-primary mr-2">03</span>
+                                 Dolor sit amet consectetur adipiscing elit?
+                              </span>
+                           </AccordionTrigger>
+                           <AccordionContent className="text-base text-dark-brown">
+                              Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                              sagittis orci. Faucibus pulvinar elementum integer enim. Sem
+                              nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                              pellentesque eu tincidunt. Lectus urna duis convallis
+                              convallis tellus. Urna molestie at elementum eu facilisis
+                              sed odio morbi quis
+                           </AccordionContent>
+                        </AccordionItem>
+                     </Accordion>
+                  </div>
+               </div>
+            </section>
          </main>
          <footer></footer>
       </section>
