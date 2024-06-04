@@ -29,6 +29,7 @@ const config = {
       extend: {
          backgroundImage: {
             whyus: "url('/whyUs.PNG')",
+            introduction: "url('/banner.PNG')",
          },
          colors: {
             border: "hsl(var(--border))",

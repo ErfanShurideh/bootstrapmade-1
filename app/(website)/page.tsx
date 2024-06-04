@@ -2,6 +2,8 @@ import React from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
    CheckCheck,
+   ChevronLeft,
+   ChevronRight,
    ChevronsRight,
    Circle,
    Dribbble,
@@ -30,6 +32,7 @@ import {
    AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+import banner from "../../public/banner.jpg";
 import testimonials1 from "../../public/testimonials-5.jpg";
 import testimonials2 from "../../public/testimonials-4.jpg";
 import portfolio1 from "../../public/portfolio-1.jpg";
@@ -48,58 +51,96 @@ import team4 from "../../public/team-4.jpg";
 
 const page = () => {
    return (
-      <section>
-         <header className="text-dark-brown">
-            <div className="container flex justify-between items-center py-4">
-               {/* Logo */}
-               <div className="font-bold text-2xl text-slate-900">MULTI</div>
-               {/* Menu section */}
-               <div>
-                  {/* mobile menu */}
-                  <div className="lg:hidden">
-                     <Sheet>
-                        <SheetTrigger className="flex justify-center items-center">
-                           <Menu />
-                        </SheetTrigger>
-                        <SheetContent>
-                           <ul className="w-full flex flex-col py-10 gap-y-6">
-                              <li className="w-full text-primary">Home</li>
-                              <li className="w-full">About</li>
-                              <li className="w-full">Services</li>
-                              <li className="w-full">Portfolio</li>
-                              <li className="w-full">Drop Down</li>
-                              <li className="w-full">Contact</li>
-                              <li className="w-full mt-2">
-                                 <button className="w-full py-2 px-4 text-left text-white bg-primary rounded-md">
-                                    Get Started
-                                 </button>
-                              </li>
-                           </ul>
-                        </SheetContent>
-                     </Sheet>
-                  </div>
-                  {/* desktop menu */}
-                  <div className="hidden lg:block">
-                     <ul className="flex justify-center items-center gap-x-4">
-                        <li className="px-2 text-primary cursor-pointer">Home</li>
-                        <li className="px-2 cursor-pointer">About</li>
-                        <li className="px-2 cursor-pointer">Services</li>
-                        <li className="px-2 cursor-pointer">Portfolio</li>
-                        <li className="px-2 cursor-pointer">Drop Down</li>
-                        <li className="px-2 cursor-pointer">Contact</li>
-                        <li className="px-2 flex justify-center items-center">
-                           <button className="py-2 px-4 text-left text-white bg-primary rounded-md">
-                              Get Started
-                           </button>
-                        </li>
-                     </ul>
+      <section className="relative pt-[80px]">
+         <header className="text-dark-brown fixed top-0 left-0 right-0 z-50 shadow-xl">
+            <div className="bg-white">
+               <div className="container flex justify-between items-center py-6">
+                  {/* Logo */}
+                  <div className="font-bold text-2xl text-slate-900">MULTI</div>
+                  {/* Menu section */}
+                  <div>
+                     {/* mobile menu */}
+                     <div className="lg:hidden">
+                        <Sheet>
+                           <SheetTrigger className="flex justify-center items-center">
+                              <Menu />
+                           </SheetTrigger>
+                           <SheetContent>
+                              <ul className="w-full flex flex-col py-10 gap-y-6">
+                                 <li className="w-full text-primary">Home</li>
+                                 <li className="w-full">About</li>
+                                 <li className="w-full">Services</li>
+                                 <li className="w-full">Portfolio</li>
+                                 <li className="w-full">Drop Down</li>
+                                 <li className="w-full">Contact</li>
+                                 <li className="w-full mt-2">
+                                    <button className="w-full py-2 px-4 text-left text-white bg-primary rounded-md">
+                                       Get Started
+                                    </button>
+                                 </li>
+                              </ul>
+                           </SheetContent>
+                        </Sheet>
+                     </div>
+                     {/* desktop menu */}
+                     <div className="hidden lg:block">
+                        <ul className="flex justify-center items-center gap-x-4">
+                           <li className="px-2 text-primary cursor-pointer">Home</li>
+                           <li className="px-2 cursor-pointer">About</li>
+                           <li className="px-2 cursor-pointer">Services</li>
+                           <li className="px-2 cursor-pointer">Portfolio</li>
+                           <li className="px-2 cursor-pointer">Drop Down</li>
+                           <li className="px-2 cursor-pointer">Contact</li>
+                           <li className="px-2 flex justify-center items-center">
+                              <button className="py-2 px-4 text-left text-white bg-primary rounded-md">
+                                 Get Started
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
                   </div>
                </div>
             </div>
          </header>
          <main>
             {/* Introduction */}
-            <section></section>
+            <section className="w-full relative">
+               <div className="h-0 pb-[calc(100vh-80px)] overflow-hidden">
+                  <Image
+                     src={banner}
+                     alt="banner"
+                     fill
+                     className="object-center object-cover absolute top-0 bottom-0 left-0 right-0"
+                  />
+                  <div className="size-14 flex justify-center items-center bg-white rounded-full bg-opacity-20 absolute top-[calc(50%-28px)] right-0 md:right-4 cursor-pointer transition-all duration-300 hover:bg-opacity-30 [&>.next]:hover:text-opacity-60">
+                     <ChevronRight className="size-10 text-white text-opacity-25 transition-all duration-300 next" />
+                  </div>
+                  <div className="size-14 flex justify-center items-center bg-white rounded-full bg-opacity-20 absolute top-[calc(50%-28px)] left:0 md:left-4 cursor-pointer transition-all duration-300 hover:bg-opacity-30 [&>.next]:hover:text-opacity-60">
+                     <ChevronLeft className="size-10 text-white text-opacity-25 transition-all duration-300 next" />
+                  </div>
+                  <div className="flex flex-col justify-start start items-center lg:items-start absolute right-20 lg:right-24 xl:right-1/2 left-20 lg:left-24 bottom-16 md:top-[calc(50%-80px)]">
+                     <div className="font-bold text-3xl text-center lg:text-left text-white">
+                        Welcome to Multi
+                     </div>
+                     <div className="text-white text-center lg:text-left mt-4">
+                        Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
+                        est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                        mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                        repellendus deleniti vel.
+                     </div>
+                     <div>
+                        <button className="py-2 px-6 mt-4 bg-primary text-sm text-white rounded-md">
+                           Read More
+                        </button>
+                     </div>
+                  </div>
+                  <div className="w-32 absolute bottom-4 md:bottom-10 left-[calc(50%-60px)] flex justify-center items-center align-middle gap-x-2">
+                     <Circle className="size-3 text-primary bg-primary rounded-full" />
+                     <Circle className="size-3 text-transparent bg-white opacity-60 rounded-full" />
+                     <Circle className="size-3 text-transparent bg-white opacity-60 rounded-full" />
+                  </div>
+               </div>
+            </section>
             {/* About Us */}
             <section className="container flex flex-col justify-center items-start gap-y-14 py-14">
                <div>
