@@ -1,11 +1,13 @@
 import React from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
+   Check,
    CheckCheck,
    ChevronLeft,
    ChevronRight,
    ChevronsRight,
    Circle,
+   CircleHelp,
    Dribbble,
    Earth,
    Facebook,
@@ -15,8 +17,14 @@ import {
    Instagram,
    Link,
    Linkedin,
+   Mail,
+   MailIcon,
+   MapPin,
+   MapPinIcon,
    Menu,
+   MessageCircleQuestion,
    MonitorPlay,
+   PhoneCall,
    Play,
    Plus,
    Quote,
@@ -24,6 +32,7 @@ import {
    Tent,
    Twitter,
    UsersRound,
+   X,
 } from "lucide-react";
 import {
    Accordion,
@@ -992,8 +1001,324 @@ const page = () => {
                   </div>
                </div>
             </section>
+            <section>
+               <div className="container">
+                  <div>
+                     <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                        PRICING
+                     </span>
+                     <h2 className="font-extrabold text-3xl text-dark-blue leading-[44px] pt-1">OUR COMPETING PRICE</h2>
+                  </div>
+                  <div className="flex flex-col mt-10 lg:flex-row lg:gap-8">
+                     <div className="flex flex-col justify-center items-center mt-14 p-6 bg-slate-100 pt-10">
+                        <h1 className="font-light text-3xl">Free</h1>
+                        <span className="text-5xl mt-5">$0</span>
+                        <p className="font-light text-xl">per month</p>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+
+                        <div className="flex mt-5 ml-5 gap-1 justify-centerf text-slate-400">
+                           <span>
+                              <X className="w-5" />
+                           </span>
+                           <p className="font-light line-through">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+
+                        <div className="flex mt-5 ml-5 gap-1 justify-centerf text-slate-400">
+                           <span>
+                              <X className="w-5" />
+                           </span>
+                           <p className="font-light line-through">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <button className="mt-4 mb-10 border-2 border-blue-900 p-2 px-8 rounded text-dark-blue hover:text-white hover:bg-dark-blue ">Get Started</button>
+                     </div>
+                     <div className="flex flex-col justify-center items-center mt-14 p-6 bg-slate-100 pt-10 border-4 border-primary lg:-translate-y-9">
+                        <h1 className="font-light text-3xl">Business</h1>
+                        <span className="text-5xl mt-5">$29</span>
+                        <p className="font-light text-xl">per month</p>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <button className="mt-4 mb-10 border-2 border-primary p-2 px-8 rounded text-white bg-primary hover:text-primary hover:bg-white ">Get Started</button>
+                     </div>
+                     <div className="flex flex-col justify-center items-center mt-14 p-6 bg-slate-100 pt-10">
+                        <h1 className="font-light text-3xl">Developer</h1>
+                        <span className="text-5xl mt-5">$49</span>
+                        <p className="font-light text-xl">per month</p>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <div className="flex mt-5 ml-5 gap-1 justify-center">
+                           <span>
+                              <Check className="text-primary w-5" />
+                           </span>
+                           <p className="font-light">Lorem ipsum dolor, sit amet consectetur ?</p>
+                        </div>
+                        <button className="mt-4 mb-10 border-2 border-blue-900 p-2 px-8 rounded text-dark-blue hover:text-white hover:bg-dark-blue ">Get Started</button>
+                     </div>
+                  </div>
+               </div>
+
+               {/* <--Asked question--> */}
+               <div className="container flex flex-col gap-5">
+                  <div className=" mt-8">
+                     <div>
+                        <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                           F.A.Q
+                        </span>
+                        <h2 className="font-extrabold text-3xl text-dark-blue leading-[44px] pt-1">FREQUENTLY ASKED QUESTIONS</h2>
+                     </div>
+                  </div>
+                  <div className="p-6 lg:flex">
+                     <div className="mt-5 flex ">
+                        <CircleHelp className="w-8 text-blue-400" />
+                        <h2 className="ml-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                     </div>
+                     <p className="mt-3 ml-3 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nobis molestiae aspernatur necessitatibus aperiam excepturi distinctio repellendus. Vitae, optio nihil.</p>
+                  </div>
+                  <div className="border-t-2 p-6 lg:flex">
+                     <div className="mt-5 flex ">
+                        <CircleHelp className="w-8 text-blue-400" />
+                        <h2 className="ml-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                     </div>
+                     <p className="mt-3 ml-3 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nobis molestiae aspernatur necessitatibus aperiam excepturi distinctio repellendus. Vitae, optio nihil.</p>
+                  </div>
+
+                  <div className="border-t-2 p-6 lg:flex">
+                     <div className="mt-5 flex ">
+                        <CircleHelp className="w-8 text-blue-400" />
+                        <h2 className="ml-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                     </div>
+                     <p className="mt-3 ml-3 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nobis molestiae aspernatur necessitatibus aperiam excepturi distinctio repellendus. Vitae, optio nihil.</p>
+                  </div>
+
+                  <div className="border-t-2 p-6 lg:flex">
+                     <div className="mt-5 flex ">
+                        <CircleHelp className="w-8 text-blue-400" />
+                        <h2 className="ml-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                     </div>
+                     <p className="mt-3 ml-3 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nobis molestiae aspernatur necessitatibus aperiam excepturi distinctio repellendus. Vitae, optio nihil.</p>
+                  </div>
+
+                  <div className="border-t-2 p-6 lg:flex">
+                     <div className="mt-5 flex ">
+                        <CircleHelp className="w-8 text-blue-400" />
+                        <h2 className="ml-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                     </div>
+                     <p className="mt-3 ml-3 text-sm ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nobis molestiae aspernatur necessitatibus aperiam excepturi distinctio repellendus. Vitae, optio nihil.</p>
+                  </div>
+               </div>
+               {/* <--Contact us--> */}
+               <div className="container bg-slate-100">
+                  <div className=" mt-8 pt-12">
+                     <div>
+                        <span className="text-sm text-[#aaaaaa] tracking-widest relative after:absolute after:-right-32 after:top-1/3 after:w-28 after:mt-0.5 after:h-[1px] after:bg-primary">
+                           CONTACT
+                        </span>
+                        <h2 className="font-extrabold text-3xl text-dark-blue leading-[44px] pt-1">CONTACT US</h2>
+                     </div>
+                  </div>
+                  <div className="lg:flex lg:gap-2 xl:gap-4 lg:justify-center lg:items-center">
+                     <div className="lg:w-2/3">
+                        <div className="flex flex-col justify-center items-center mt-10 lg:mt-2 bg-white p-4">
+                           <MapPinIcon className="border border-primary border-dashed  rounded-full size-12 text-primary p-2 mb-4" />
+                           <h1 className="mb-4 text-xl font-semibold text-slate-600">Our Addres</h1>
+                           <p className="font-light mb-4">Adam street,New Yourk,631654</p>
+                        </div>
+
+                        <div className="md:flex md:justify-between md:gap-3">
+                           <div className="md:w-1/2">
+                              <div className="">
+                                 <div className="flex flex-col justify-center items-center mt-10 lg:mt-2 bg-white p-4">
+                                    <MailIcon className="border border-primary border-dashed  rounded-full size-12 text-primary p-2 mb-4" />
+                                    <h1 className="mb-4 text-xl font-semibold text-slate-600">Email Us</h1>
+                                    <p className="font-light mb-4">Erfan@gmail.com</p>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div className="md:w-1/2">
+                              <div className="flex flex-col justify-center items-center mt-10 lg:mt-2 p-4 lg:p-1 bg-white">
+                                 <PhoneCall className="border border-primary border-dashed  rounded-full size-12 text-primary p-2 mb-4 lg:mt-6" />
+                                 <h1 className="mb-4 text-xl font-semibold text-slate-600">Call Us</h1>
+                                 <p className="font-light mb-4">+98 9916249243</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div className="flex flex-col  bg-white justify-center items-center gap-4 container border-t-2 shadow-lg ">
+                        <input type="text" placeholder="Your Name" className="w-full border p-2 mt-8 lg:mt-4 rounded " />
+                        <input type="text" placeholder="Your Email" className="w-full border p-2 rounded" />
+                        <input type="text" placeholder="Subject" className="w-full border p-2 rounded" />
+                        <input type="text" placeholder="Message" className="w-full border p-2 pb-20 rounded" />
+                        <button className="bg-primary p-3 px-6 mb-6 text-white rounded hover:text-primary hover:bg-white hover:border-primary hover:border-2">Send Massage</button>
+                     </div>
+                  </div>
+
+               </div>
+
+
+            </section>
          </main>
-         <footer></footer>
+         <footer className="container text-white mt-10 bg-darker-blue">
+            <div className="md:flex md:justify-center md:items-center lg:gap-6">
+               <div className="lg:flex lg:gap-6 lg:justify-center lg:items-center">
+                  <div className="pt-10 flex flex-col justify-center items-center border-t-4 border-primary">
+                     <h1 className="text-white font-bold text-2xl mb-4">Multi</h1>
+                     <p className="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, temporibus!</p>
+                     <p className="text-white mt-10"><span className="font-bold">Phone: </span>09916249243</p>
+                     <p className="text-white"><span className="font-bold">Email: </span>erfan.shurideh@gmil.com</p>
+                     <div className="flex mt-5 gap-3">
+                        <Instagram className="text-white bg-blue-900/95 p-1 size-8 rounded" />
+                        <Linkedin className="text-white bg-blue-900/95 p-1 size-8 rounded" />
+                        <Facebook className="text-white bg-blue-900/95 p-1 size-8 rounded" />
+                     </div>
+                  </div>
+                  <div className="flex flex-col justify-center mt-20 md:mt-5">
+                     <h1 className="font-semibold">Useful Links</h1>
+                     <ul>
+                        <li className="flex mt-2 text-sm ">
+                           <ChevronRight className="w-4 text-primary" />
+                           Home
+                        </li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           About Us
+                        </li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           Services
+                        </li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           Terms of Service</li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           Privacy Policy
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div className="lg:flex lg:gap-16">
+                  <div className="flex flex-col justify-center mt-10">
+                     <h1 className="font-semibold">Our Services</h1>
+                     <ul>
+                        <li className="flex mt-2 text-sm ">
+                           <ChevronRight className="w-4 text-primary" />
+                           Web Design
+                        </li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           Web Development
+                        </li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           Product Managment
+                        </li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           Marketing
+                        </li>
+                        <li className="flex mt-2 text-sm">
+                           <ChevronRight className="w-4 text-primary" />
+                           Grapgic Design
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div className="mt-10">
+                     <h1 className="font-semibold mb-3">Our NewsLetter</h1>
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, commodi!</p>
+                     <div className="flex mt-5">
+                        <input type="text" className="rounded py-2" />
+                        <button className="bg-primary rounded py-2">Subscribe</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div className="text-center mt-5">
+               copyright <span className="font-semibold">Multi</span> All Right Reserved
+            </div>
+            <div className="text-center text-sm mt-3">
+               Designed By <span className="text-primary">Erfan</span>
+            </div>
+         </footer>
       </section>
    );
 };
